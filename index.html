@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="portfolio website about programming">
+    <meta name="keywords" content="HTML, CSS, Javascript, Web Development, Game Development">
+    <meta name="author" content="Alit Putra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alit Putra - My First Website</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Alit Putra</title>
 </head>
 <body>
     <header>
@@ -18,35 +26,126 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Hi, welcome to my website!</h1>
-            <p>This website is for my portfolio</p>
+        <section id="hero">
+            <h1>Hi, I Am Alit Putra!</h1>
+            <p>I am a computer science student who also an hotelier with 5 years experience in hospitality industry</p>
+            <a href="#" class="button">About Me!</a>
         </section>
-        <section>
-            <h2>What i am doing?</h2>
-            <ul>
-                <li>Website Development</li>
-                <li>Game Development</li>
-            </ul>
-        </section>
-        <section>
-            <h2>What do people say about me</h2>
-            <div>
-                <h3>John Doe</h3>
-                <p><em>Alit is doing a good job, he able to meet the requirement of the job and willing to learn</em></p>
+        <section id="works">
+            <h2>What Can I Do?</h2>
+            <div class="works-container">
+                <div class="works-card">
+                    <img src="assets/placeholder.jpg" alt="Front-End Web Development">
+                    <h3>Front-End Web Development</h3>
+                    <p>Making a static website page using HTML, CSS and Javascript</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="works-card">
+                    <img src="assets/placeholder.jpg" alt="Back-End Web Development">
+                    <h3>Back-End Web Development</h3>
+                    <p>Currently understand in using PHP and Node.js for the back-end technology of the website</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="works-card">
+                    <img src="assets/placeholder.jpg" alt="Game Development">
+                    <h3>Game Development</h3>
+                    <p>C# and Python in Game Development and currently has 1 ongoing project for indie game</p>
+                    <a href="#">Learn More</a>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="skills">
+            <h2>My current Level</h2>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level Progress</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td><div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div></td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td><div class="progress"><div class="progress-bar" style="width: 70%;">70%</div></div></td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td><div class="progress"><div class="progress-bar" style="width: 40%;">40%</div></div></td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td><div class="progress"><div class="progress-bar" style="width: 30%;">30%</div></div></td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td><div class="progress"><div class="progress-bar" style="width: 20%;">20%</div></div></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="#">Learn More</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <!--This section will hidden first because no content in it and act as placeholder-->
+        <!-- <section id="review">
+            <h2>What do people say about me</h2>
+            <div>
+                <h3>Alit Putra</h3>
+                <p><em>Sorry this part has no content yet but i will give my best for the people that use my service and keep learning</em></p>
+            </div>
+        </section> -->
+        <section id="blog">
+            <article>
+                <h2>Updates</h2>
+                <div class="brief-content">
+                    <h3>First Step of Web Developer</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Numquam, 
+                    facere exercitationem. 
+                    <a href="#">Read more!</a></p>
+                </div>
+                <div class="brief-content">
+                    <h3>Overcoming Burnout</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Numquam, 
+                    facere exercitationem. 
+                    <a href="#">Read more!</a></p>
+                </div>
+                <div class="brief-content">
+                    <h3>Get Inspired by Others</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Numquam, 
+                    facere exercitationem. 
+                    <a href="#">Read more!</a></p>
+                </div>  
+            </article>
+        </section>
+        <section id="cta">
             <h2>Contact Me</h2>
             <p>If you are interested with my service you may use this form to contact me</p>
             <form>
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Your Name" required><br>
                 <label for="email">Email</label><br>
-                <input type="text" placeholder="your email">
+                <input type="email" placeholder="Your Email" required><br>
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" placeholder="Your Message"></textarea><br>
                 <input type="submit">
             </form>
         </section>
         <footer>
-            <p>This website is made by @Alit-Putra</p>
+            <p>Copyright © 2024 Alit Putra</p>
+            <nav>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter (X)</a></li>
+                </ul>
+            </nav>
         </footer>
     </main>
 </body>
