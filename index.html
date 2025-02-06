@@ -49,31 +49,28 @@
     </section>
     <section id="projects" class="container my-5" data-aos="fade-up">
         <h2 class="text-center">Projects</h2>
-        <div class="row g-4">
+        <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="card project-card" onclick="openModal('Project 1', 'A short description of the project.', 'assets/placeholder.jpg')">
-                    <img src="assets/placeholder.jpg" class="card-img-top" alt="Project 1">
+                <div class="card project-card" onclick="openModal('Data Analyst Project', 'Data Analyst Portfolio project', 'assets/placeholder.jpg', '')">
+                    <img src="assets/placeholder.jpg" class="card-img-top" alt="My First Project">
                     <div class="card-body">
-                        <h3 class="card-title">Project 1</h3>
-                        <p class="card-text">A short description of the project.</p>
+                        <h3 class="card-title">Data Analyst Project</h3>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card project-card" onclick="openModal('Project 2', 'Another interesting project.', 'assets/placeholder.jpg')">
-                    <img src="assets/placeholder.jpg" class="card-img-top" alt="Project 2">
+                <div class="card project-card" onclick="openModal('Game Development Project', 'Assorted game development projects', 'assets/placeholder.jpg', '')">
+                    <img src="assets/placeholder.jpg" class="card-img-top" alt="My First Project">
                     <div class="card-body">
-                        <h3 class="card-title">Project 2</h3>
-                        <p class="card-text">Another interesting project.</p>
+                        <h3 class="card-title">Game Development</h3>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card project-card" onclick="openModal('Project 3', 'An innovative project.', 'assets/placeholder.jpg')">
-                    <img src="assets/placeholder.jpg" class="card-img-top" alt="Project 3">
+                <div class="card project-card" onclick="openModal('Web Development Project', 'Website Development projects', 'assets/placeholder.jpg', '')">
+                    <img src="assets/placeholder.jpg" class="card-img-top" alt="My First Project">
                     <div class="card-body">
-                        <h3 class="card-title">Project 3</h3>
-                        <p class="card-text">An innovative project.</p>
+                        <h3 class="card-title">Web Development</h3>
                     </div>
                 </div>
             </div>
@@ -90,6 +87,9 @@
                 <div class="modal-body text-center">
                     <img id="modalImage" src="" class="img-fluid mb-3" alt="Project Image">
                     <p id="modalDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <a id="modalLink" href="#" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>

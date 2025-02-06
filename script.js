@@ -44,10 +44,14 @@ function typeWriter() {
 }
 document.addEventListener("DOMContentLoaded", typeWriter);
 
-function openModal(title, description, image) {
+function openModal(title, description, image, githubLink) {
     document.getElementById("modalTitle").textContent = title;
     document.getElementById("modalDescription").textContent = description;
     document.getElementById("modalImage").src = image;
+    let githubButton = document.getElementById("modalLink");
+    githubButton.href = githubLink;
+    githubButton.style.display = githubLink ? "inline-block" : "none";
+
     var projectModal = new bootstrap.Modal(document.getElementById("projectModal"));
     projectModal.show();
 }
