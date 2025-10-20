@@ -3,70 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alit Putra | Junior Programmer</title>
+    <title>Alit Putra | Front End Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
+    <header>
+        <nav>
             <div class="nav-brand">
-                <img src="assets/logo.png" alt="Alit Logo" class="logo">
-                <span class="brand-text">ALIT PUTRA</span>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <p class="logo-text">Alit <span class="highlight">Putra</span></p>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="#systems" class="nav-link">SYSTEMS</a></li>
-                <li class="nav-item"><a href="#missions" class="nav-link">MISSIONS</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">CONNECT</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="nav-items">
+                <ul class="nav-links">
+                    <li class="link"><a href="#home">Home</a></li>
+                    <li class="link"><a href="#about">About</a></li>
+                    <li class="link"><a href="#projects">Projects</a></li>
+                    <li class="link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="home" class="hero-section">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <p class="hero-subtitle">SYSTEM INITIALIZE</p>
-                <h1 class="hero-title">
-                    ALIT<br>
-                    <span class="highlight">PUTRA</span>
-                </h1>
-                <p class="hero-description">Full Stack Developer | Game Developer | Aspiring Programmer</p>
-                
+                <h1 class="hero-title"><span class="highlight">Full Stack</span> Developer</h1>
+                <h2 class="hero-subtitle">Building apps for your digital needs</h2>
+                <p class="hero-text">Passionate developer creating innovative solutions for modern world challenges</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">DEPLOY MISSION</button>
-                    <button class="btn btn-secondary">VIEW SYSTEMS</button>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-value">3</span>
-                        <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-value">1</span>
-                        <span class="stat-label">Year</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-value">100%</span>
-                        <span class="stat-label">Success</span>
-                    </div>
+                    <button class="btn-primary">See My Works</button>
+                    <button class="btn-secondary">Connect with Me</button>
                 </div>
             </div>
-
-            <div class="hero-visual">
-                <img src="assets/hero.jpg" alt="Mech Pilot" class="hero-image">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
             </div>
         </section>
     </main>
-
-    <!-- <footer class="footer">
-    </footer> -->
-
-    <script src="script.js"></script>
 </body>
 </html>
